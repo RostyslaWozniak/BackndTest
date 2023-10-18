@@ -1,8 +1,9 @@
 import express from 'express';
-import config from './config.js';
 const app = express();
 
-const { port, hostname } = config;
+const hostname = 'localhost';
+const port = 3000;
+
 app.use(express.json())
 
 app.get('/', (req, res) => {
