@@ -1,8 +1,8 @@
 import express from 'express';
 const app = express();
 
-const hostname = 'localhost';
-const port = 3000;
+const hostname = process.env.hostname || 'localhost';
+const port = process.env.port || 3000;
 
 app.use(express.json())
 
